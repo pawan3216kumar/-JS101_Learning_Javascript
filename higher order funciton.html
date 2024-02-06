@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let firstname = "ritesh"
+    let lastname = "gupta"
+
+    let fullname = firstname + lastname
+    console.log(fullname)
+
+    // console.log(firstname.split(""))
+
+    fullname = "ritesh laxman gupta"
+
+    let arr = fullname.split("-")
+    console.log(arr)
+
+    arr = []
+    let str = ""
+
+    function mySplit(){
+
+        for(let i of fullname){
+        if(i === " "){
+
+            arr.push(str)
+            str = " "
+        }
+        else{
+            str += i
+        }
+    }
+    // arr.push(str)
+    console.log(arr)
+}
+
+    // console.log(arr)
+
+    mySplit()
+    
+
+    let pawan = "PawanpKumarpNishad"
+
+    arr = pawan.split("p")
+
+    console.log(arr)
+
+    arr = pawan.split("")
+
+    console.log(arr)
+
+
+
+
+
+</script>

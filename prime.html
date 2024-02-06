@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        
+    </body>
+</html>
+
+<script>
+
+    function isPrime(num){
+        let counter = 0
+        if(num === 1){
+            console.log("1 is neither prime nor composite number")
+        }
+        else if(num === 2){
+            console.log("It's a prime number")
+        }
+        else{
+            for(let i = 2 ; i < num; i++){
+                if(num % i === 0){
+                    counter++
+                }
+            }
+            if(counter === 0){
+            console.log("it's prime number")
+            }
+            else{
+            console.log("it's not a prime number")
+            }
+        }
+        
+    }
+    isPrime(5)
+
+</script>
